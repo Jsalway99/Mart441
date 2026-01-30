@@ -1,0 +1,59 @@
+
+<nav class="nav" aria-label="Main">
+  <style>
+    /* ---- Page Theme ---- */
+    :root{
+      --text-blue: #6FA4FF;     /* soft sky blue that pairs well with white/pink backgrounds */
+      --card-bg: rgba(0,0,0,0.55); /* dark overlay behind text for readability */
+      --card-border: rgba(255,255,255,0.14);
+    }
+
+    /* ---- Background image and base text styles ---- */
+    body {
+     
+      background-image: url("C:/Users/Jonathon/Downloads/Code for website/Code for website/Jasper baby.jpg"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center 30%;
+
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+      /* Global text color (your requested blue) */
+      color: var(--text-blue);
+
+      /* Helps legibility over photos */
+      text-shadow: 0 2px 8px rgba(0,0,0,.6);
+      line-height: 1.6;
+    }
+
+    /* ---- Centered content card for readability ---- */
+    .content {
+      max-width: 500px;
+      margin: 10vh auto;
+      background: var(--card-bg);
+      padding: 1.5rem 1.25rem;
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+    }
+
+    h1 { margin: 0 0 .6rem 0; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+    h2 { margin: 1.2rem 0 .4rem; font-size: clamp(1.2rem, 3.5vw, 1.6rem); }
+    h3 { margin: 1rem 0 .3rem; font-size: 1.1rem; }
+    p  { margin: .4rem 0 1rem; }
+
+    ul { margin: .3rem 0 1rem 1.2rem; }
+  </style>
+  <strong style="color:#eaf0f7;">JS • MART 441</strong>
+  <ul class="menu" role="list">
+    <!-- 🔶 LINK to Home -->
+    <li><a href="HW1.html">Home</a></li>
+
+    <!-- 🔶 LINK to About -->
+    <li><a href="about.html">About me</a></li>
+
+    <!-- 🔶 LINK to Interests -->
+    <li><a href="Gaming memory.html">Gmaing Memory</a></li>
+  </ul>
+</nav>
