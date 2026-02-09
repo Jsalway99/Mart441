@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         :root{
+      --text-Green: #319001;     /* soft Greem that pairs well with Forrests */
+      --card-bg: rgba(151, 13, 13, 0.55); /* dark overlay behind text for readability */
+      --card-border: rgba(255,255,255,0.14);
+    }
+    
+        body{
+         background-image: url("c:/Users/Jonathon/Downloads/Code for website (1)/Code for website/Game folders/titlescreen.jpg"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center 30%;
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+      /* Global text color (your requested blue) */
+      color: var(--text-Green);
+
+      /* Helps legibility over photos */
+      text-shadow: 0 2px 8px rgba(0,0,0,.6);
+      line-height: 1.6;
+    }
+
+    /* ---- Centered content card for readability ---- */
+    .content {
+      max-width: 500px;
+      margin: 10vh auto;
+      background: var(--card-bg);
+      padding: 1.5rem 1.25rem;
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+    }
+
+    h1 { margin: 0 0 .6rem 0; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+    h2 { margin: 1.2rem 0 .4rem; font-size: clamp(1.2rem, 3.5vw, 1.6rem); }
+    h3 { margin: 1rem 0 .3rem; font-size: 1.1rem; }
+    p  { margin: .4rem 0 1rem; }
+
+    ul { margin: .3rem 0 1rem 1.2rem; }
+        
+    </style>
+   </style>
+
+    <meta charset="UTF-8">
+    <title>Forest of Three Paths</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="title">Forest of Three Paths</h1>
+
+    <!-- IMAGE THAT JS WILL UPDATE -->
+    <img id="sceneImage" src="forest.jpg" alt="Scene" style="width: 400px; border-radius: 10px;">
+
+    <!-- STORY TEXT -->
+    <div id="story">
+        You stand at the edge of an ancient forest. Legends say it shifts and responds to the choices of travelers.
+    </div>
+
+    <!-- START BUTTON -->
+   <button id="startButton" onclick="choosePath('start')">Start</button>
+
+
+
+    <!-- CHOICE BUTTONS -->
+    <div id="choices"></div>
+
+    <script src="the game.js"></script>
+
+</body>
+</html>
